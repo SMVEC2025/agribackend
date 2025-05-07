@@ -15,17 +15,32 @@ export default async function handler(req, res) {
   }
 
   const crmUrl = 'https://application.smvec.ac.in/custom/service/v4_1_custom/rest.php';
+  const enquiryData = req.body;
 
   const postData = {
     method: 'submit_enquiry',
     input_type: 'JSON',
     response_type: 'JSON',
-    rest_data: JSON.stringify(req.body),
+    rest_data: JSON.stringify({
+    enquiry: {
+      ...enquiryData,
+      created_at: new Date(),
+      encode_id: "", // generate or leave empty
+      utm_id: '',
+      utm_source: '',
+      utm_medium: '',
+      utm_campaign: '',
+      utm_gclid: '',
+    },
+    user: process.env.API_USER,
+    key: process.env.API_KEY
+  })
   };
 
   try {
     const response = await axios.post(crmUrl, new URLSearchParams(postData));
     res.status(200).json(response.data);
+    console.log(response.data)
   } catch (err) {
     console.error('Error forwarding to CRM:', err.message);
     res.status(500).json({ error: 'Failed to submit to CRM' });
