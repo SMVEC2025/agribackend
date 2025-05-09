@@ -40,7 +40,6 @@ export default async function handler(req, res) {
   try {
     const response = await axios.post(crmUrl, new URLSearchParams(postData));
     res.status(200).json(response.data);
-    console.log(response.data)
   } catch (err) {
     console.error('Error forwarding to CRM:', err.message);
     res.status(500).json({ error: 'Failed to submit to CRM' });

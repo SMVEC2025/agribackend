@@ -23,11 +23,9 @@ async function sendOtp(mobile_number) {
 
   try {
     const response = await axios.post(url, new URLSearchParams(data));
-    console.log('Response:', response.data);
 
     // Optional: save OTP to memory (like PHP $_SESSION)
     const returnedOtp = response.data;
-    console.log('Returned OTP (if available):', returnedOtp);
   } catch (error) {
     console.error('Error sending OTP:', error.response ? error.response.data : error.message);
   }
