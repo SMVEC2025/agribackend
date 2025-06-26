@@ -5,7 +5,9 @@ export default async function handler(req, res) {
 const allowedOrigins = [
   'https://agri.smvec.ac.in',
   'https://lawcollege.vercel.app',
-  'http://localhost:5173'
+  'http://localhost:5173',
+  'https://arts.smvec.ac.in',
+
 ];
 
 const origin = req.headers.origin;
