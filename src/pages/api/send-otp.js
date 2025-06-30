@@ -6,6 +6,7 @@ const allowedOrigins = [
   'https://agri.smvec.ac.in',
   'https://lawcollege.vercel.app',
   'http://localhost:5173',
+  'http://localhost:3000',
   'https://arts.smvec.ac.in',
 
 ];

@@ -7,6 +7,8 @@ const allowedOrigins = [
   'https://lawcollege.vercel.app',
   'http://localhost:5173',
   'https://arts.smvec.ac.in',
+  'http://localhost:3000',
+
 
 ];
 
