@@ -8,6 +8,7 @@ const allowedOrigins = [
   'http://localhost:5173',
   'http://localhost:3000',
   'https://arts.smvec.ac.in',
+  'https://law.smvec.ac.in',
 
 ];
 
