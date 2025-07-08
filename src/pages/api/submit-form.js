@@ -38,12 +38,6 @@ if (allowedOrigins.includes(origin)) {
     enquiry: {
       ...enquiryData,
       created_at: new Date(),
-      encode_id: "", // generate or leave empty
-      utm_id: '',
-      utm_source: '',
-      utm_medium: '',
-      utm_campaign: '',
-      utm_gclid: '',
     },
     user: process.env.API_USER,
     key: process.env.API_KEY
