@@ -30,7 +30,7 @@ export default async function handler(req, res) {
   if (condition) {
     return res.status(200).json({
       status: condition,
-      img: 'https://res.cloudinary.com/dahwq2a3k/image/upload/v1758605915/WhatsApp_Image_2025-09-20_at_11.43.03_4769468e_cxozvb.jpg',
+      img: 'https://res.cloudinary.com/dahwq2a3k/image/upload/v1758606275/standiee_ubpect.webp',
     });
   } else {
     return res.status(200).json({
