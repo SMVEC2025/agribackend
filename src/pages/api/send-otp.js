@@ -10,6 +10,7 @@ const allowedOrigins = [
   'https://arts.smvec.ac.in',
   'https://law.smvec.ac.in',
   'https://medscience.smvec.ac.in',
+  'https://physiotherapy.smvec.ac.in',
 
 ];
 
