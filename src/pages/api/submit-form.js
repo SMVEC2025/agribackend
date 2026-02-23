@@ -11,6 +11,7 @@ const allowedOrigins = [
   'http://localhost:3000',
   'https://medscience.smvec.ac.in',
   'https://physiotherapy.smvec.ac.in',
+  'https://alumni-zeta-ten.vercel.app',
   
 
 

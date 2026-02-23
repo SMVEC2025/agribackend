@@ -16,6 +16,7 @@ const allowedOrigins = [
     'https://law.smvec.ac.in',
     'https://medscience.smvec.ac.in',
     'https://physiotherapy.smvec.ac.in',
+    'https://alumni-zeta-ten.vercel.app',
 ];
 
 // --- Nodemailer Transporter Setup ---
